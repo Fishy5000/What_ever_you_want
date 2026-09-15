@@ -30,18 +30,18 @@ public class Main {
         }
 
         for(int i=0; i<(pw_l-pw.length());i++){
-            pw+=(int)(Math.random()*9);
+            pw+=p.GetNum();
         }
 
         if(pw.length()!=pw_l){
 
             while(pw.length()!=pw_l){
-                pw+=(int)(Math.random()*9);
+                pw+=p.GetNum();
             }
         }
 
         System.out.println(pw);
-//
+
 
 
 
