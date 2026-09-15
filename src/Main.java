@@ -21,14 +21,23 @@ public class Main {
         }
          System.out.println("do you want your pw of have a special character 1 for yes 2 for no");
         aw=sc.nextInt();
-        if(aw==1){}
+        if(aw==1){
+            pw+=p.GetSpecial();
+        }
 
         for(int i=0;i<(pw_l-pw.length())/2;i++){
             pw+=p.GetLower();
         }
 
-        for(int i=0; i<pw_l;i++){
+        for(int i=0; i<(pw_l-pw.length());i++){
             pw+=(int)(Math.random()*9);
+        }
+
+        if(pw.length()!=pw_l){
+
+            while(pw.length()!=pw_l){
+                pw+=(int)(Math.random()*9);
+            }
         }
 
         System.out.println(pw);
