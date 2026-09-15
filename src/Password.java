@@ -18,4 +18,8 @@ public class Password {
         int randy = (int)((Math.random()*19));
         return spec[randy];
     }
+
+    public int GetNum(){
+        return (int)((Math.random()*10));
+    }
 }
