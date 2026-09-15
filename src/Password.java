@@ -12,4 +12,10 @@ public class Password {
         int randy = (int)((Math.random()*26));
         return lower[randy];
     }
+
+    public String GetSpecial(){
+        String[] spec = new String[]{"!","@","#","$","%","^","&","*","(",")","-","_","=","+","?","<",",",">",".",};
+        int randy = (int)((Math.random()*19));
+        return spec[randy];
+    }
 }
