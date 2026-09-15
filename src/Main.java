@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        Password p=new Password();
         String pw="";
         int pw_l=8;
         Scanner sc = new Scanner(System.in);
@@ -16,10 +17,15 @@ public class Main {
         int aw=sc.nextInt();
 
         if(aw==1){
+            pw=p.GetUpper();
         }
          System.out.println("do you want your pw of have a special character 1 for yes 2 for no");
         aw=sc.nextInt();
         if(aw==1){}
+
+        for(int i=0;i<(pw_l-pw.length())/2;i++){
+
+        }
 
 
 
